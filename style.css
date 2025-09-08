@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .game-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+canvas {
+    background-color: #fff;
+    border: 2px solid #2c3e50;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+}
+
+@media (min-width: 768px) {
+    .game-info {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+}
+
+.score-container {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.speed-control {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.speed-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.speed-control input[type="range"] {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.speed-control #speed-value {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.controls button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #2980b9;
+}
+
+.mobile-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.horizontal-controls {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.mobile-controls button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.mobile-controls button:hover {
+    background-color: #2980b9;
+}
+
+@media (min-width: 768px) {
+    .mobile-controls {
+        display: none;
+    }
+}
+
+.instructions {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.instructions h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.instructions p {
+    margin-bottom: 8px;
+}
